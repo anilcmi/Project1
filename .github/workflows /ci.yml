@@ -1,11 +1,11 @@
-# name: run-test-on-pr
-# on: 
-#   push:
-#     paths:
-#     - 'frontend/**'
-#     branches:
-#       - "main"
-# #     types: [reopened, opened, edited]
+name: run-test-on-pr
+on: 
+  push:
+    paths:
+    - 'frontend/**'
+    branches:
+      - "main"
+#     types: [reopened, opened, edited]
 
 # jobs:
 #   build:
@@ -34,8 +34,8 @@
 # #       with:
 # #         name: frontend-code-coverage-report
 # #         path: frontend/coverage/lcov.info
-name: Test workflow
-on: push
+# name: Test workflow
+# on: push
 jobs:
   build:
     runs-on: ubuntu-latest
