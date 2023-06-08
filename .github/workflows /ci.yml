@@ -1,12 +1,12 @@
 name: wxample
-on:
-  push:
-    paths:
-    - 'frontend/**'
-    - 'ci.yml'
-  pull_request:
-    paths: 
-    - 'frontend/**'
+# on:
+#   push:
+#     paths:
+#     - 'frontend/**'
+#     - 'ci.yml'
+#   pull_request:
+#     paths: 
+#     - 'frontend/**'
 jobs:
   build:
     runs-on: ubuntu-latest
