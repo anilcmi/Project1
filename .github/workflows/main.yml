@@ -1,5 +1,24 @@
-name: Test workflow
-on: push
+# name: Test workflow
+# on: 
+#   push:
+#     paths:
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - run: echo "Hello, world!"
+
+
+name: run-test-on-pr
+on: 
+  push:
+    paths:
+    - 'frontend/**'
+    - 'main.yml'
+    branches:
+      - "main"
+
 jobs:
   build:
     runs-on: ubuntu-latest
