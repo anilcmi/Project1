@@ -2,7 +2,7 @@ name: run-test-on-pr
 on: 
   push:
     paths:
-    - 'frontend/**'
+    - '**/frontend/**'
     branches:
       - "main"
 #     types: [reopened, opened, edited]
