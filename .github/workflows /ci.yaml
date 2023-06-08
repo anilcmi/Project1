@@ -1,6 +1,6 @@
 name: run-test-on-pr
 on: 
-  ppush:
+  push:
     paths:
     - 'frontend/**'
     branches:
