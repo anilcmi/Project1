@@ -15,7 +15,7 @@ on:
   push:
     paths:
     - 'frontend/**'
-    - 'main.yml'
+    - '.github/**/main.yml'
     branches:
       - "main"
 
