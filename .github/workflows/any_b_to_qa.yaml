@@ -5,8 +5,7 @@ on:
     inputs:
       deploy_branch:
         description: 'Branch to deploy'
-        type: branch
-        default: 'staging'
+        type: branch 
         required: true
 jobs:
   build:
@@ -21,12 +20,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout to given branch
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
         with:
           ref: ${{ github.event.inputs.deploy_branch }}
-
-
-
+        
       - name: Login to Amazon ECR
         id: login-ecr
         run: echo ${{ github.event.inputs.deploy_branch }}
+    
