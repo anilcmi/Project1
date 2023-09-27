@@ -2,6 +2,11 @@ name: CI/CD - Branch to QA
 
 on:
   workflow_dispatch:
+    inputs:
+      environment:
+        type: environment
+        description: Select the environment
+
 
 jobs:
   build:
